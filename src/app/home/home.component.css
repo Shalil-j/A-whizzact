@@ -83,6 +83,7 @@ box-shadow: 12px 12px 0px 0px #b60027;
 -moz-box-shadow: 22px 21px 0px 4px rgb(157, 0, 34) ;
 box-shadow: -8px 8px 0px 0px rgb(157, 0, 34) ;
 }
+
 .laravel svg{
   width: 2.5rem!important;
   height: 2.5rem!important;
@@ -106,10 +107,54 @@ box-shadow: 8px 8px 0px 0px #232F3E ;
   width: 2.8rem!important;
   height: 2.8rem!important;
 }
+.php{
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  background-color: #777BB4;
+  top: 15rem;
+  left: 23rem;
+  rotate: calc(5deg);
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-box-shadow: 22px 21px 0px 4px #474b79 ;
+-moz-box-shadow: 22px 21px 0px 4px #474b79 ;
+box-shadow: 8px 8px 0px 0px #474b79 ;
+}
+.php svg{
+  width: 4rem;
+  fill: white;
+}
 @keyframes float {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px);}
   100%   { transform: translate(0, -0px); }
+}
+/* service */
+.service-icon-div{
+  height: 7rem !important;
+  width: 8rem !important;
+}
+.service-icon{
+  width: 8rem!important;
+  height: 8rem!important;
+}
+.service-icon img{
+    height: 5rem !important;
+    width: 5rem!important;
+}
+.service-img{
+  background: url('../../assets/icons/blob/blob (1).svg');
+  background-position: centers centers;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.service-img img{
+  height: 18rem!important;
+}
+.service-tools-icons{
+  height: 1.5rem!important;
 }
 /* clients */
 .slider {
@@ -150,4 +195,65 @@ box-shadow: 8px 8px 0px 0px #232F3E ;
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+/* promise */
+.promise{
+  position: relative;
+  overflow: hidden;
+}
+/* .promise-p-red{
+height: 15rem;
+width: 15rem;
+border-radius: 50%;
+position: absolute;
+background-color: #FF2D20;
+top: -2rem;
+left: -2rem;
+z-index: 1;
+filter: blur(100px);
+-webkit-filter: blur(80px);
+-moz-filter: blur(10px);
+-o-filter: blur(10px);
+-ms-filter: blur(10px);
+}
+.promise-p-voilet{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #c020ff;
+  top: 3rem;
+  left: rem;
+  z-index: 1;
+  filter: blur(100px);
+  -webkit-filter: blur(80px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  } */
+/* industry */
+.card-ind{
+  width: 15.85rem !important;
+}
+.industry-card{
+  width: 15rem;
+  height: 15rem;
+
+
+}
+.industry-icon{
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: -2rem;
+  left: 0rem;
+  right: 0;
+}
+.industry-icon img{
+  height: 3rem;
+}
+.industry-card img{
+min-height:100% ;
+width: 100%;
+  object-fit: cover !important;
 }

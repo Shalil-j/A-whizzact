@@ -66,11 +66,30 @@ animation-iteration-count: infinite;
   50%  { transform: translate(0, 15px);}
   100%   { transform: translate(0, -0px); }
 }
-.numberCircle {
-  border-radius: 50%;
+.work-patter{
+  /* width: 50rem; */
+  overflow: hidden;
+  position:relative !important;
+  justify-content: space-around !important;
+  display: flex !important;
+
+}
+.work-step{
   width: 2.5rem;
   height: 2.5rem;
-  padding: 8px;
-  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
 }
+.work-step::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #a793ff;
+  z-index: -1;
 
+}
