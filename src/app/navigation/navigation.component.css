@@ -1,0 +1,53 @@
+.navbar{
+  z-index: 100;
+  transition-duration: 0.3s;
+  top: 0;
+}
+.links {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem !important;
+    background-color: transparent !important;
+  }
+
+
+  .service-items span{
+    font-size: 2.5rem;
+    color: #3419AB !important;
+  }
+  .service-items p{
+    font-size: 1rem;
+    color: #3419AB !important;
+
+
+  }
+.dropdown-menu{
+background-color: white !important;
+}
+
+  .links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3419AB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .nav{
+    background-color: transparent;
+  }
+  .links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .portfolio:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: #3419AB;
+  }
+  .contactus:hover{
+    background-color: #200f6c !important;
+  }
