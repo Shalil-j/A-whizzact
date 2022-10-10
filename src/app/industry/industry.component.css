@@ -1,112 +1,75 @@
-.industry{
-  padding-bottom: 10rem;
+
+.header{
+  height: 100vh;
 }
-.header-sec{
-  padding-top: 12rem;
-}
-.industry-image img{
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: cover;
-}
-.industry-image{
-  background-color: #3419AB;
-  width: 20rem!important;
-  height: 20rem !important;
-}
-.industry-content h1{
-  color: rgb(60, 60, 60) !important;
-}
-.industry-content p{
-  color: rgb(0, 0, 0);
-}
-.counter-left{
+.header-icon{
   position: absolute;
-  left: 28rem;
-  top: 20rem;
+  filter:         drop-shadow(5px 5px 5px rgba(54, 54, 54, 0.229));
 }
-.counter-right{
-  position: absolute;
-  right: 30rem;
-  top: 20rem;
+.marketing{
+  top: -5rem;
+  rotate: calc(20deg);
+  height: 6rem;
 }
-.counter-number{
-  width: 7rem;
+.tools{
+  top: 10rem;
+  left: 5rem;
+  height: 5rem;
+}
+.book{
+  top: -2rem;
+  right: 0;
   height: 7rem;
-  background-color: #3419AB;
 }
-#patternl{
-  z-index: -1;
-  position: absolute;
-  top: -1.5rem;
-  left: 6.3rem;
-  height: 8rem !important;
+.medical{
+  top: -7rem;
+  left: 50%;
+  height: 5rem;
+  rotate: calc(-20deg);
 }
-#patternr{
-  z-index: -1;
-  position: absolute;
-  top: -1.5rem;
-  right: 6.8rem;
-  height: 8rem !important;
+.shopkart{
+  bottom: 0;
+  right: 0;
+  transform: scaleX(-1);
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header-sec h1{
-    font-size: 4.5rem;
-  }
-  .industry-icons{
-    width: 8rem !important;
-    height: 8rem !important;
+/* radius */
+.top-radius{
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
-.industry-icons img{
-  height: 4rem;
+.left-radius{
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
 }
-.industry-icons p{
-  font-size: 0.8rem;
-  color: black;
+.full-radius{
+  border-radius: 1.5rem;
 }
-.industry-image{
-  width: 20rem;
-  height: 20rem;
-  overflow: hidden;
+/* main industry */
+/* .industry-bg{
+  background:linear-gradient( #f8f9fae2, #f8f9fae0), url(../../assets/icons/patterns/patter2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.main-industry{
+  padding: 0 !important;
 }
-.industry-content h1{
-  font-size: 2rem !important;
-  color: aliceblue !important;
-}
-.industry-image img{
-  height: 20rem;
-}
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .industry-icons{
-    width: 8rem !important;
-    height: 8rem !important;
-}
-.industry-icons img{
-  margin-bottom: 0;
-  height: 4rem !important;
-}
-.industry-icons p{
-  font-size: 0.8rem;
-}
-  .industry-content h1{
-    font-size: 2.5rem !important;
-  }
-  .industry-image{
-    width: 18rem;
-    height: 18rem;
-    overflow: hidden;
-  }
-  .industry-image img{
-    height: 18rem;
-  }
-  .industry-icons img{
-    height: 5rem;
-  }
 
-
-
-
+.industry-img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.industry-icon{
+  height: 2rem;
+}
+.edu-img{
+  width: 100%;
+  height: 13rem;
+}
+.shop-img{
+  height: 15rem;
+}
+.finance-img{
+  height: 16rem;
 }

@@ -3,7 +3,11 @@
 
 .footer{
   background-color: #000722;
-  /* position: fixed; */
   bottom: 0;
-
+}
+a:hover{
+  color: rgb(103, 103, 255) !important;
+}
+input:focus , button:focus{
+  outline: none;
 }

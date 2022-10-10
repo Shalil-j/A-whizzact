@@ -1,0 +1,36 @@
+.company{
+  padding-bottom: 5rem;
+}
+.header{
+  height: 100vh;
+  background:linear-gradient(#f9f9f99e,#f9f9f9ac), url(../../assets/icons/patterns/pattern3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/*  */
+.avatar{
+  padding: 0;
+  border-radius: 2rem;
+  width: 16.5rem;
+}
+.avatar-bg{
+background-color: rgb(237, 216, 255);
+  width: 100%;
+  border-radius: 1.8rem;
+  height: 15rem;
+  position: relative;
+}
+.avatar-bg img{
+height: 12rem;
+}
+/*  */
+.title{
+  color: rgb(227, 227, 227);
+}
+.goal{
+  border-bottom: dashed 2px rgb(222, 222, 222);
+}
+

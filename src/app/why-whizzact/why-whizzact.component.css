@@ -82,6 +82,12 @@ animation-iteration-count: infinite;
   justify-content: center;
   align-items: center;;
 }
+.work-patter::before :first-child{
+  width: 0 !important;
+}
+#work-step-1::before{
+  width: 0 !important;
+}
 .work-step::before{
   content: "";
   position: absolute;

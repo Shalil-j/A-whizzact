@@ -133,104 +133,67 @@ box-shadow: 8px 8px 0px 0px #474b79 ;
 }
 /* service */
 .service-icon-div{
-  height: 7rem !important;
-  width: 8rem !important;
+  height: 7.5rem !important;
+  width: 15rem !important;
+  position: relative !important;
 }
 .service-icon{
-  width: 8rem!important;
-  height: 8rem!important;
+  width: 7rem!important;
+  height: 7rem!important;
+}
+.service-icon-div:hover .service-icon img{
+  transform: scale(1.1) !important;
 }
 .service-icon img{
-    height: 5rem !important;
-    width: 5rem!important;
+    height: 4.5rem !important;
+    width: 4.5rem!important;
+    transition: all 0.5s ease-in-out;
 }
-.service-img{
-  background: url('../../assets/icons/blob/blob (1).svg');
-  background-position: centers centers;
-  background-repeat: no-repeat;
-  background-size: contain;
+.service-btn-active:after {
+  content:'';
+  position: absolute;
+  bottom: -0.8rem;
+  /* margin: 0 auto; */
+  border-top: 10px solid #FF2D20;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.service-btn-active{
+  border: 3.5px solid !important;
+  margin-left: 0 !important;
+}
+.service-btn-active .service-icon img{
+  transform: scale(1.1) !important;
 }
 .service-img img{
-  height: 18rem!important;
+  max-height: 18rem!important;
+  max-width: 20rem !important;
+  z-index: 10;
+}
+.blob{
+  position: absolute;
+  max-width: 100%;
+  height: 15rem;
+  top: 0;
+  left: 0;
+  z-index: -5 !important;
 }
 .service-tools-icons{
   height: 1.5rem!important;
 }
 /* clients */
-.slider {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-
-}
-
-.slider::before,
-.slider::after {
-  background: linear-gradient(to right, rgb(249, 249, 249) 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg) !important;
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slider .slide-track {
-  animation: scroll 40s linear infinite !important;
-  display: flex;
-  width: calc(250px * 14) !important;
-}
-
-.slider .slide {
-  height: 100px;
-  width: 250px;
-}
 /* promise */
+.promise-bg{
+  background: linear-gradient( rgba(249, 249, 249, 0.822), rgba(249, 249, 249, 0.822) ), url("../../assets/icons/patterns/pattern1.png") ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  /* filter: brightness(50%); */
+}
 .promise{
   position: relative;
   overflow: hidden;
 }
-/* .promise-p-red{
-height: 15rem;
-width: 15rem;
-border-radius: 50%;
-position: absolute;
-background-color: #FF2D20;
-top: -2rem;
-left: -2rem;
-z-index: 1;
-filter: blur(100px);
--webkit-filter: blur(80px);
--moz-filter: blur(10px);
--o-filter: blur(10px);
--ms-filter: blur(10px);
-}
-.promise-p-voilet{
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #c020ff;
-  top: 3rem;
-  left: rem;
-  z-index: 1;
-  filter: blur(100px);
-  -webkit-filter: blur(80px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  } */
 /* industry */
 .card-ind{
   width: 15.85rem !important;
@@ -256,4 +219,72 @@ filter: blur(100px);
 min-height:100% ;
 width: 100%;
   object-fit: cover !important;
+}
+/* count */
+.count{
+  background:linear-gradient(#3419abd6,#3419abdf), url(../../assets/icons/patterns/cccircular.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.count-icon img{
+  height: 8rem;
+}
+/* our client */
+.client-logo img{
+  width: auto;
+  max-height: 100%;
+}
+.client-logo{
+  height: 6rem !important;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* industry */
+.industry2-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  transition: 0.5s ease-in-out;
+}
+.industry2-card{
+  position: relative;
+  overflow: hidden;
+}
+.industry2-card:hover .industry2-img{
+  transform: scale(1.1);
+}
+.industry2-content{
+  background:linear-gradient(rgba(255, 255, 255, 0),rgba(47, 47, 47, 0.67));
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.edu-sec{
+  height: 10rem !important;
+  position: relative;
+}
+/* testimonal  */
+.testimonal-card{
+  width: 20rem;
+  padding: 0;
+}
+.testimonal{
+  z-index: 5 !important;
+}
+.quote-icon{
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  top: 3.5rem;
+  left: 25%;
+  z-index: 3 !important;
+}
+.quote-icon svg{
+  fill: #3419ab1f !important;
+  z-index: 3 !important;
 }

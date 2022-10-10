@@ -63,6 +63,94 @@ p,h1,h2,h3,h4,h5,h6,strong,span{
 .borer-blue{
   border-color: #3419AB !important;
 }
+.text-head{
+  text-align: center !important;
+  font-size: 2.5rem !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem !important;
+  color: #383838!important;
+}
+.text-head::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  height: 0.2rem;
+  width: 20rem;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+/* badge */
+.badge-red{
+  background-color: rgb(255, 190, 190);
+  color: rgb(159, 0, 0);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align: center !important;
+}
+.badge-blue{
+  background-color: rgb(190, 200, 255);
+  color: rgb(0, 48, 159);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
+.badge-green{
+  background-color: rgb(204, 255, 190);
+  color: rgb(19, 159, 0);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
+.badge-yellow{
+  background-color: rgb(251, 255, 190);
+  color: rgb(159, 159, 0);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
+.badge-voilet{
+  background-color: rgb(234, 190, 255);
+  color: rgb(151, 0, 159);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
+.badge-orange{
+  background-color: rgb(255, 214, 190);
+  color: rgb(159, 88, 0);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
+.badge-gray{
+  background-color: rgb(209, 209, 209);
+  color: rgb(113, 113, 113);
+  border-radius: 5px;
+  padding: 3px;
+padding-left: 1rem;
+padding-right: 1rem;
+text-align:center !important ;
+}
 /* scrollbar */
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
