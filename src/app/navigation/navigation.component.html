@@ -9,14 +9,14 @@
           <div class="d-none d-lg-block">
           <ul class="navbar nav border-0 shadow-0 ">
               <li class="nav-item">
-                  <a class="nav-link text-dark links" routerLink="/" >Home</a>
+                  <a
+                   class="nav-link text-dark links" routerLink="/" >Home</a>
               </li>
-              <li class="nav-item dropdown position-static">
-                <a class="nav-link text-dark service-link  dropdown-toggle fw-semibold"  id="navbarDropdown" role="button"
-                  data-mdb-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
-                <!-- Dropdown menu -->
+                <!-- menu -->
                 <div class="dropdown-menu mt-0 border-0" aria-labelledby="navbarDropdown" style="
 
                                 top: 5rem;
@@ -95,7 +95,7 @@
                   <a class="nav-link text-dark links " routerLink="/contact">Contact</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link  fw-bold portfolio rounded-9" href="">Our PortFolio</a>
+                  <a class="nav-link  fw-bold portfolio rounded-pill" href="">Our PortFolio</a>
               </li>
           </ul>
       </div>
@@ -105,7 +105,8 @@
       </button>
       <div  class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div  class="offcanvas-header bg-white ">
-          <img src="./asserts/logo.png" alt=""  class="w-25">
+          <a href="/">
+          <img src="../../assets/image/logo.png" alt=""  class="w-25"></a>
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body bg-white border-top" >
@@ -207,16 +208,16 @@
             </li>
 
             <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" href="whyWhizzact.html">Why WhizzAct</a>
+              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="/why-whizzact">Why WhizzAct</a>
             </li>
             <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" href="industry.html">Industry</a>
+              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="/industry">Industry</a>
             </li>
             <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" href="company.html">Company</a>
+              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="/company">Company</a>
             </li>
             <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="/contact">Contact</a>
             </li>
             <button class="btn btn-primary mt-5 fw-bold">Out PortFolio</button>
 

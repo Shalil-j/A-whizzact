@@ -10,7 +10,7 @@ import { WhyWhizzactComponent } from './why-whizzact/why-whizzact.component';
 import { IndustryComponent } from './industry/industry.component';
 import { CompanyComponent } from './company/company.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+// import { TerminalModule } from 'primeng/terminal';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    // TerminalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

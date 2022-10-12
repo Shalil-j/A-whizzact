@@ -53,6 +53,7 @@
 } */
 .main-industry{
   padding: 0 !important;
+  height: auto !important;
 }
 
 .industry-img{
@@ -72,4 +73,42 @@
 }
 .finance-img{
   height: 16rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header{
+    padding-top: 6rem;
+    height: auto;
+  }
+  .finance-img,.shop-img,.edu-img{
+    height: 13rem;
+  }
+  .left-radius{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .left-radius{
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

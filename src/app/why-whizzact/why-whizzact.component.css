@@ -99,3 +99,47 @@ animation-iteration-count: infinite;
   z-index: -1;
 
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .why-whizzact{
+    padding-top: 0rem;
+  }
+  .header{
+    height: 100vh;
+  }
+}
+.m-work p{
+background-color: #301f80;
+height: 2rem;
+width: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+/* margin-bottom: 1.5rem; */
+color: white;;
+}
+.m-work span{
+  margin-top: 2rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
