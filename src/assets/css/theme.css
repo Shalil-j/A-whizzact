@@ -65,7 +65,7 @@ p,h1,h2,h3,h4,h5,h6,strong,span{
 }
 .text-head{
   text-align: center !important;
-  font-size: 2.5rem !important;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase !important;
   position: relative;
@@ -82,8 +82,8 @@ p,h1,h2,h3,h4,h5,h6,strong,span{
   margin-left:auto;
   margin-right:auto;
   height: 0.2rem;
-  width: 20rem;
-  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  width: 10rem;
+  background: linear-gradient(110deg, #3419AB, #1BB0D4);
   z-index: -1;
   transition: height .25s cubic-bezier(.6,0,.4,1);
 }
@@ -172,4 +172,9 @@ text-align:center !important ;
     background-color: #3419ab;
     border-radius: 10px;
     border: 3px solid #ffffff;
+  }
+  @media only screen and (max-width: 600px) {
+  .text-head{
+    font-size: 1.5rem;
+  }
   }

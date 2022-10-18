@@ -10,6 +10,14 @@ import { WhyWhizzactComponent } from './why-whizzact/why-whizzact.component';
 import { IndustryComponent } from './industry/industry.component';
 import { CompanyComponent } from './company/company.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MobileappServiceComponent } from './services/mobileapp-service/mobileapp-service.component';
+import { WebappServiceComponent } from './services/webapp-service/webapp-service.component';
+import { DevopsServiceComponent } from './services/devops-service/devops-service.component';
+import { CloudServiceComponent } from './services/cloud-service/cloud-service.component';
+import { SoftwareServiceComponent } from './services/software-service/software-service.component';
+import { MarketingServiceComponent } from './services/marketing-service/marketing-service.component';
+import { GraphicdesignServiceComponent } from './services/graphicdesign-service/graphicdesign-service.component';
+import { UxuiServiceComponent } from './services/uxui-service/uxui-service.component';
 // import { TerminalModule } from 'primeng/terminal';
 @NgModule({
   declarations: [
@@ -21,6 +29,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     WhyWhizzactComponent,
     IndustryComponent,
     CompanyComponent,
+    MobileappServiceComponent,
+    WebappServiceComponent,
+    DevopsServiceComponent,
+    CloudServiceComponent,
+    SoftwareServiceComponent,
+    MarketingServiceComponent,
+    GraphicdesignServiceComponent,
+    UxuiServiceComponent,
 
   ],
   imports: [
