@@ -1,0 +1,17 @@
+.header{
+  height: 100vh;
+}
+.technology-div{
+  height: 8rem;
+  width: 8rem;
+}
+.technology-div svg{
+  height: 4rem;
+  width: 4rem;
+}
+.app-process{
+  width: 19rem;
+}
+.app-process img{
+  height: 3rem;
+}

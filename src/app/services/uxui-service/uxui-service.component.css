@@ -1,0 +1,21 @@
+.header {
+  height: 100vh;
+}
+.tools img{
+  height: 2rem;
+}
+.uxui-div img{
+  height: 3rem;
+}
+.uxui-div{
+  width: 18rem;
+  padding: 2.3rem;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .container.header {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+  }
+}
+

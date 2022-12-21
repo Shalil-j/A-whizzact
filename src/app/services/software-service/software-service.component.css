@@ -1,0 +1,23 @@
+.header {
+  height: 80vh;
+}
+.software-dev-div {
+  overflow-x: auto;
+}
+.software-dev {
+  min-width: 18rem !important;
+  max-width: 18rem !important;
+  padding: 3rem;
+  cursor: grab;
+}
+.software-dev img{
+  height: 3.5rem;
+}
+.technology {
+  width: 7rem;
+  height: 7rem;
+  /* background: rgb(121, 64, 64); */
+}
+.technology svg {
+  height: 4rem;
+}

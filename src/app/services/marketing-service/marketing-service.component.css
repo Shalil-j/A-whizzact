@@ -1,0 +1,17 @@
+.header{
+  height: 100vh;
+}
+.header-img img{
+  height: 45rem;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 7rem;
+}
+.uxui-div img{
+  height: 3rem;
+}
+.uxui-div{
+  width: 18rem;
+  padding: 2.3rem;
+  border-radius: 1rem;
+}

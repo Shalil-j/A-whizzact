@@ -12,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
 //     }
 //   }
 // })
+declare let $:any;
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -23,5 +24,14 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // $(window).scroll(function(){
+  // 	var scroll = $(window).scrollTop();
+	//   if (scroll > 300) {
+	//     $(".black").css("background" , "blue");
+	//   }
 
+	//   else{
+	// 	  $(".black").css("background" , "#333");
+	//   }
+  // })
 }

@@ -1,0 +1,37 @@
+.header {
+  height: 80vh;
+}
+.web-dev-div {
+  overflow-x: auto;
+}
+.web-dev {
+  min-width: 18rem !important;
+  padding: 3rem;
+  cursor: grab;
+}
+.technology {
+  width: 7rem;
+  height: 7rem;
+  /* background: rgb(121, 64, 64); */
+}
+.technology svg {
+  height: 4rem;
+}
+.transparency span{
+    width: 2rem !important;
+    height: 2rem !important;
+    border-radius: 50%;
+    margin-top: -2.5rem;
+    margin-left: -2rem;
+}
+
+
+
+/* *************************************************************** */
+/* clinet logo */
+/*  */
+/* .customer-logos {
+    background-color: #111;
+  }
+   */
+/* Slider */

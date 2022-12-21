@@ -87,6 +87,9 @@ p,h1,h2,h3,h4,h5,h6,strong,span{
   z-index: -1;
   transition: height .25s cubic-bezier(.6,0,.4,1);
 }
+.terminal-font{
+  font-family: 'Overpass Mono', monospace;
+}
 /* badge */
 .badge-red{
   background-color: rgb(255, 190, 190);
@@ -172,6 +175,26 @@ text-align:center !important ;
     background-color: #3419ab;
     border-radius: 10px;
     border: 3px solid #ffffff;
+  }
+   /* horizontal scroll */
+  .horizental-scroll{
+    scrollbar-width: auto;
+    scrollbar-color: #8f8f8f #f9f9f9;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .horizental-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .horizental-scroll::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  }
+
+  .horizental-scroll::-webkit-scrollbar-thumb {
+    background-color: #8f8f8f;
+    border-radius: 10px;
+    border: 3px solid #f9f9f9;
   }
   @media only screen and (max-width: 600px) {
   .text-head{
