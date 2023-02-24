@@ -14,8 +14,9 @@ export class HomeComponent implements OnInit {
 
   serviceArray:any=[]
 
+
   constructor(private router: Router) {
-    window.scroll(1000,1000);
+    // window.scroll(1000,1000);
 
   }
 
@@ -64,29 +65,7 @@ export class HomeComponent implements OnInit {
     nav: false,
   }
 // testimonal
-Testimonal: OwlOptions = {
-  loop: true,
-  mouseDrag: true,
-  touchDrag: true,
-  pullDrag: true,
-  dots: false,
-  lazyLoad:true,
-  autoplay:true,
-  rewind:true,
-  autoplaySpeed:1000,
-  navSpeed: 700,
-  center: true,
-  navText: ['', ''],
-  responsive: {
-    300: {
-      items: 1
-    },
-    600: {
-      items: 3
-    }
-  },
-  nav: false,
-}
+
 
 
 

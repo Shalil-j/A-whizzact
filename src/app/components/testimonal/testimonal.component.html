@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-between testimonal mt-5">
+  <div class="col-4 pb-5 mt-5 px-5 h-100 testimonal-navbtn">
+    <h1 class="fw-semibold">
+      What Our Clients<br />
+      <span class="display-3 fw-semibold text-blue">Says</span>
+    </h1>
+
+    <div class="owl-nav d-flex align-items-center justify-content-center">
+      <div class="owl-prev d-flex align-items-center justify-content-center">
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
+      </div>
+      <div
+        class="owl-next ms-3 d-flex align-items-center justify-content-center"
+      >
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      </div>
+    </div>
+  </div>
+  <!-- -------------- -->
+  <div class="col-7 testimonal-bg testimonal-bg-color py-5">
+    <div class="d-flex align-items-end h-100 testimona-card-div">
+      <owl-carousel-o [options]="Testimonal" class="w-100">
+        <!--  -->
+        <ng-template carouselSlide *ngFor="let items of testimonal">
+          <div class="testimonal-card">
+            <div
+              class="d-flex justify-content-start align-items-center w-100"
+            >
+              <div class="testimonal-profile">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="ms-3">
+                <h4 class="fs-4 fw-semibold text-capitalize">{{items.name}}</h4>
+                <p class="text-dark">
+                  from <a class="text-dark" href="">{{items.company}}</a>
+                </p>
+              </div>
+            </div>
+            <p class="text-xs mt-3">
+              {{items.msg}}
+            </p>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+      <!--  -->
+    </div>
+  </div>
+</div>
+
+<!-- testimonal -->

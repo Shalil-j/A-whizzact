@@ -2,31 +2,24 @@
   height: 100vh;
 }
 .video-div{
-  background: url(../../../assets/image/service-imgs/graphic-designing/spline.png);
-  cursor: url('../../../assets/image/service-imgs/graphic-designing/cursor.svg'),auto !important;
 height: 100%;
 background-position: center left;;
 background-size: cover;
 
 }
-.header-video{
-  /* height: 80vh; */
-  perspective: 500px;
-  /* overflow: hidden; */
-}
 .header-video video{
   width: 70%;
   height: 100%;
-  transform: perspective(1500px) rotateY(-15deg);
-  transition: transform 1s ease 0s;
   opacity: 80%;
   cursor: none;
 }
-.header-video video:hover{
-  transform: perspective(3000px) rotateY(0deg);
-  opacity: 1;
+.color-pallete{
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  bottom: 18rem;
+  left: -3rem;
 }
-
 
 .graphic-design{
   width: 40rem;

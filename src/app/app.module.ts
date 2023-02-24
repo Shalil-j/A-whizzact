@@ -18,6 +18,8 @@ import { SoftwareServiceComponent } from './services/software-service/software-s
 import { MarketingServiceComponent } from './services/marketing-service/marketing-service.component';
 import { GraphicdesignServiceComponent } from './services/graphicdesign-service/graphicdesign-service.component';
 import { UxuiServiceComponent } from './services/uxui-service/uxui-service.component';
+import { ClientlogoCarouselComponent } from './components/clientlogo-carousel/clientlogo-carousel.component';
+import { TestimonalComponent } from './components/testimonal/testimonal.component';
 // import { TerminalModule } from 'primeng/terminal';
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { UxuiServiceComponent } from './services/uxui-service/uxui-service.compo
     MarketingServiceComponent,
     GraphicdesignServiceComponent,
     UxuiServiceComponent,
+    ClientlogoCarouselComponent,
+    TestimonalComponent,
 
   ],
   imports: [
