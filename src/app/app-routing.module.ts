@@ -16,57 +16,57 @@ import { UxuiServiceComponent } from './services/uxui-service/uxui-service.compo
 
 const routes: Routes = [
   {
-    path:"",
+    path: "",
     component: HomeComponent,
   },
   {
-    path:"contact",
+    path: "contact",
     component: ContactComponent,
   },
   {
-    path:"why-whizzact",
+    path: "why-whizzact",
     component: WhyWhizzactComponent,
   },
   {
-    path:"industry",
+    path: "industry",
     component: IndustryComponent,
   },
   {
-path:"company",
-component: CompanyComponent,
+    path: "company",
+    component: CompanyComponent,
   },
   {
-  path:"mobile-service",
-  component: MobileappServiceComponent,
+    path: "mobile-service",
+    component: MobileappServiceComponent,
   },
   {
-  path:"webapp-service",
-  component: WebappServiceComponent,
+    path: "webapp-service",
+    component: WebappServiceComponent,
   },
   {
-    path:"software-service",
+    path: "software-service",
     component: SoftwareServiceComponent,
-    },
-    {
-      path:"devops-service",
-      component: DevopsServiceComponent,
-      },
-      {
-        path:"cloud-service",
-        component: CloudServiceComponent,
-        },
-        {
-          path:"marketing-service",
-          component: MarketingServiceComponent,
-          },
-          {
-            path:"graphic-service",
-            component: GraphicdesignServiceComponent,
-            },
-            {
-              path:"uxui-service",
-              component: UxuiServiceComponent,
-              },
+  },
+  {
+    path: "devops-service",
+    component: DevopsServiceComponent,
+  },
+  {
+    path: "cloud-service",
+    component: CloudServiceComponent,
+  },
+  {
+    path: "marketing-service",
+    component: MarketingServiceComponent,
+  },
+  {
+    path: "graphic-service",
+    component: GraphicdesignServiceComponent,
+  },
+  {
+    path: "uxui-service",
+    component: UxuiServiceComponent,
+  },
 ];
 
 @NgModule({

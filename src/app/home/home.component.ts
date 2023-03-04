@@ -38,6 +38,31 @@ export class HomeComponent implements OnInit {
       });
 
   }
+
+//   $('.faculty-carousel').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     dots: false,
+//     nav: true,
+//     center: true,
+//     autoplay: true,
+//     responsive: {
+//         0: {
+//             items: 1,
+//         },
+//         700: {
+//             items: 3,
+//         },
+//         902: {
+//             items: 3,
+//         },
+//         1200: {
+//             items: 3,
+
+//         }
+//     }
+// })
+
   Clients: OwlOptions = {
     loop: true,
     mouseDrag: true,

@@ -110,7 +110,7 @@
           </ul>
       </div>
       <!-- side bar -->
-      <button class="navbar-toggler d-lg-none btn shadow-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <button class="navbar-toggler d-md-none  btn shadow-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <i class="bi bi-list" style="color: #3419AB;"></i>
       </button>
       <div  class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -131,16 +131,17 @@
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
-                data-mdb-toggle="dropdown"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
+              <!-- data-bs-toggle="dropdown" aria-expanded="false" -->
                 Services
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <div class="row justify-content-center">
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/mobile-service">
                       <span class="material-symbols-outlined">
                         phone_iphone
                         </span>
@@ -149,7 +150,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/webapp-service" >
                       <span class="material-symbols-outlined">
                         language
                         </span>
@@ -158,7 +159,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/software-service" >
                       <span class="material-symbols-outlined">
                         terminal
                         </span>
@@ -167,7 +168,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/devops-service" >
                       <span class="material-symbols-outlined">
                         data_object
                         </span>
@@ -176,7 +177,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/cloud-service">
                       <span class="material-symbols-outlined">
                         cloud
                         </span>
@@ -185,7 +186,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink"  routerLink="/marketing-service" >
                       <span class="material-symbols-outlined">
                         campaign
                         </span>
@@ -194,7 +195,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/graphic-service">
                     <span class="material-symbols-outlined">
                       edit
                       </span>
@@ -203,7 +204,7 @@
                   </div>
                   <!-- ----- -->
                   <div class="col-10  py-2">
-                    <a href="" class="d-flex nav-link side-navlink">
+                    <a href="" class="d-flex nav-link side-navlink" routerLink="/uxui-service">
                       <span class="material-symbols-outlined">
                         format_paint
                         </span>

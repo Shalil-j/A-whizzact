@@ -1,5 +1,5 @@
 .header {
-  height: 80vh;
+  height: 100vh;
 }
 .software-dev-div {
   overflow-x: auto;
@@ -20,4 +20,11 @@
 }
 .technology svg {
   height: 4rem;
+}
+
+.os-adjesstment{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1rem;
 }
