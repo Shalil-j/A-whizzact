@@ -20,7 +20,7 @@ import { GraphicdesignServiceComponent } from './services/graphicdesign-service/
 import { UxuiServiceComponent } from './services/uxui-service/uxui-service.component';
 import { ClientlogoCarouselComponent } from './components/clientlogo-carousel/clientlogo-carousel.component';
 import { TestimonalComponent } from './components/testimonal/testimonal.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+// import { SlickCarouselModule } from 'ngx-slick-carousel';
 // import { TerminalModule } from 'primeng/terminal';
 @NgModule({
   declarations: [
@@ -48,7 +48,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    SlickCarouselModule
+    // SlickCarouselModule
     // TerminalModule
   ],
   providers: [],
