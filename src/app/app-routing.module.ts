@@ -52,7 +52,7 @@ const routes: Routes = [
     component: DevopsServiceComponent,
   },
   {
-    path: "cloud-servic",
+    path: "cloud-service",
     component: CloudServiceComponent,
   },
   {

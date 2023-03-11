@@ -8,13 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class ClientlogoCarouselComponent implements OnInit {
 
   clientLogo=[
-    {img:'../../assets/icons/clients-logo/Aegis.png'},
+   
     {img:'../../assets/icons/clients-logo/Agarwal-Logo-blue.png'},
+    {img:'../../assets/icons/clients-logo/AICL-logo.jpg'},
     {img:'../../assets/icons/clients-logo/finance-logo.jpg'},
     {img:'../../assets/icons/clients-logo/ll.webp'},
     {img:'../../assets/icons/clients-logo/logo-dover_main.png'},
-    {img:'../../assets/icons/clients-logo/reachhere.png'},
-    {img:'../../assets/icons/clients-logo/taggd-brand-logo.svg'}
+    {img:'../../assets/icons/clients-logo/taggd-brand-logo.svg'},
+    {img:'../../assets/icons/clients-logo/A1sathi.png'},
+    {img:'../../assets/icons/clients-logo/Shubham-nagir.png'},
+    {img:'http://www.whizzactsolutions.com/assets/img/boru.jpg'},
+    {img:'http://www.whizzactsolutions.com/assets/img/acw.jpg'},
+    // {img:'http://www.whizzactsolutions.com/assets/img/labtest.jpg'},
+  
   ]
 
   constructor() { }

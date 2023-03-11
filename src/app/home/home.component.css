@@ -227,7 +227,7 @@ box-shadow: 8px 8px 0px 0px #232F3E ;
   height: 5rem;
   width: 5rem;
   position: absolute;
-  background-color: #777BB4;
+  background-color: rgb(254, 252, 252);
   top: 15rem;
   left: 23rem;
   rotate: calc(5deg);
@@ -239,6 +239,25 @@ box-shadow: 8px 8px 0px 0px #232F3E ;
 box-shadow: 8px 8px 0px 0px #474b79 ;
 }
 .php svg{
+  width: 4rem;
+  fill: white;
+}
+.node{
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  background-color: #777BB4;
+  top: 15rem;
+  left: 23rem;
+  rotate: calc(5deg);
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-box-shadow: 22px 21px 0px 4px #474b79 ;
+-moz-box-shadow: 22px 21px 0px 4px #474b79 ;
+box-shadow: 8px 8px 0px 0px #474b79 ;
+}
+.node svg{
   width: 4rem;
   fill: white;
 }
