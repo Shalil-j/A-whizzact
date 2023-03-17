@@ -22,6 +22,7 @@ import { ClientlogoCarouselComponent } from './components/clientlogo-carousel/cl
 import { TestimonalComponent } from './components/testimonal/testimonal.component';
 // import { SlickCarouselModule } from 'ngx-slick-carousel';
 // import { TerminalModule } from 'primeng/terminal';
+import { DragScrollModule } from 'ngx-drag-scroll';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { TestimonalComponent } from './components/testimonal/testimonal.componen
     CarouselModule,
     // SlickCarouselModule
     // TerminalModule
+    DragScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -234,9 +234,9 @@ box-shadow: 8px 8px 0px 0px #232F3E ;
   animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  -webkit-box-shadow: 22px 21px 0px 4px #474b79 ;
--moz-box-shadow: 22px 21px 0px 4px #474b79 ;
-box-shadow: 8px 8px 0px 0px #474b79 ;
+  -webkit-box-shadow: 22px 21px 0px 4px #d4d4d4 ;
+-moz-box-shadow: 22px 21px 0px 4px #d4d4d4  ;
+box-shadow: 8px 8px 0px 0px #d4d4d4  ;
 }
 .php svg{
   width: 4rem;
@@ -273,7 +273,7 @@ box-shadow: 8px 8px 0px 0px #474b79 ;
   .service-inactive{
     display: none;
     }
-
+ .service-card{height: 20rem !important;}
 
 .service-icon-div{
   height: 7.5rem !important;

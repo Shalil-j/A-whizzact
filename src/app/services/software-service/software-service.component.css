@@ -28,3 +28,8 @@
   gap: .5rem;
   margin-top: 1rem;
 }
+
+.web-dev ::ng-deep drag-scroll{
+  height:25rem;
+}
+.software-dev h3,.software-dev p{white-space: pre-wrap;}

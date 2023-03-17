@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild, AfterViewInit  } from '@angular/core';
 
 @Component({
   selector: 'app-mobileapp-service',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobileapp-service.component.css']
 })
 export class MobileappServiceComponent implements OnInit {
-
-  constructor() { }
+  constructor() { window.scrollTo(0, 0) }
 
   ngOnInit(): void {
   }
+  @ViewChild('myVideo') myVideo: any;
 
+  ngAfterViewInit() {
+    this.myVideo.nativeElement.play();
+  }
 }

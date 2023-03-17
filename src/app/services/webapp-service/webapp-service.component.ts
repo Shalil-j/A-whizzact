@@ -9,7 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class WebappServiceComponent implements OnInit {
 
-  constructor() { }
+  constructor() { window.scrollTo(0, 0)}
 
   ngOnInit(): void {
   }

@@ -13,7 +13,7 @@ declare var animejs: any;
 // const anime = require('animejs');
 export class MarketingServiceComponent implements OnInit {
 
-  constructor() { }
+  constructor() {window.scrollTo(0, 0) }
 
   ngOnInit(): void {
   }
