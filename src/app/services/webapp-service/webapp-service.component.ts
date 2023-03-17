@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
@@ -31,6 +31,11 @@ export class WebappServiceComponent implements OnInit {
     nav: false,
   }
 
+  @ViewChild('myVideo') myVideo: any;
+
+  ngAfterViewInit() {
+    this.myVideo.nativeElement.play();
+  }
 
 //   const slider = document.querySelector('.web-dev-div');
 //   let mouseDown = false;

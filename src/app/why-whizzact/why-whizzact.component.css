@@ -9,7 +9,7 @@
   height: 80vh;
   padding-top: 5rem;
 }
-.bg-p-red,.bg-p-blue{
+.bg-p-red,.bg-p-blue,.bg-p-green{
   height: 15rem !important;
   width: 20rem !important;
   position: absolute;
@@ -20,16 +20,60 @@
 -o-filter: blur(10px);
 -ms-filter: blur(10px);
 z-index: -1;
+opacity: 0.7;
 }
 .bg-p-red{
+
   background-color: rgb(255, 61, 61) !important;
-  top: 5rem;
-  left: 15rem;
+  top: 3rem;
+  left: 2rem;
+  animation-name: float-back1;
+  animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+  /* left: 1rem; */
 }
 .bg-p-blue{
   background-color: rgb(152, 61, 255) !important;
   top: -5rem;
-  left: 5rem;
+  left: -10rem;
+  animation-name: float-back2;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+.bg-p-green{
+  background-color: rgb(254, 186, 40) !important;
+    top: -3rem;
+  left: 10rem;
+  animation-name: float-back3;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes float-back1 {
+  0% { transform: translate(20px,  200px); }
+  50%  { transform: translate(200px, 350px);}
+  100%   { transform: translate(300px, 500px); }
+}
+@keyframes float-back2 {
+  0% { transform: translate(20px,  50px); }
+  50%  { transform: translate(100px, 150px);}
+  100%   { transform: translate(200px, 300px); }
+}
+@keyframes float-back3 {
+  0% { transform: translate(20px,  50px); }
+  50%  { transform: translate(500px, 150px);}
+  100%   { transform: translate(800px, 400px); }
+}
+.Home-img{
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+}
+.Home-img-body{
+  width: 12rem;
+  height: 11rem;
 }
 
 /* icons */
@@ -99,6 +143,7 @@ animation-iteration-count: infinite;
   z-index: -1;
 
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 

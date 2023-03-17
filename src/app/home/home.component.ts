@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
 
 
   constructor(private router: Router) {
+    window.scroll(0,0);
+
     // window.scroll(1000,1000);
 
   }
