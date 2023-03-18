@@ -36,35 +36,35 @@ const routes: Routes = [
     component: CompanyComponent,
   },
   {
-    path: "mobile-service",
+    path: "services/mobile-application",
     component: MobileappServiceComponent,
   },
   {
-    path: "webapp-service",
+    path: "services/web-application",
     component: WebappServiceComponent,
   },
   {
-    path: "software-service",
+    path: "services/software-development",
     component: SoftwareServiceComponent,
   },
   {
-    path: "devops-service",
+    path: "services/devops-service",
     component: DevopsServiceComponent,
   },
   {
-    path: "cloud-service",
+    path: "services/cloud-service",
     component: CloudServiceComponent,
   },
   {
-    path: "marketing-service",
+    path: "services/digitial-marketing",
     component: MarketingServiceComponent,
   },
   {
-    path: "graphic-service",
+    path: "services/graphic-designing",
     component: GraphicdesignServiceComponent,
   },
   {
-    path: "uxui-service",
+    path: "services/uxui-designing",
     component: UxuiServiceComponent,
   },
 ];
