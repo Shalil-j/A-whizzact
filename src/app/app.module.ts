@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { TestimonalComponent } from './components/testimonal/testimonal.componen
 // import { SlickCarouselModule } from 'ngx-slick-carousel';
 // import { TerminalModule } from 'primeng/terminal';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { ServicescarouselComponent } from './components/servicescarousel/servicescarousel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +45,7 @@ import { DragScrollModule } from 'ngx-drag-scroll';
     UxuiServiceComponent,
     ClientlogoCarouselComponent,
     TestimonalComponent,
+    ServicescarouselComponent,
 
   ],
   imports: [
@@ -51,7 +54,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
     CarouselModule,
     // SlickCarouselModule
     // TerminalModule
-    DragScrollModule
+    DragScrollModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

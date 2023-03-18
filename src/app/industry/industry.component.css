@@ -6,6 +6,8 @@
   position: absolute;
   filter:         drop-shadow(5px 5px 5px rgba(54, 54, 54, 0.229));
 }
+.os-adjesstment{display: flex;gap: .2rem;flex-wrap: wrap;}
+.catagoery{display: flex;gap: .3rem;flex-wrap: wrap;padding: 1rem;}
 .marketing{
   top: -5rem;
   rotate: calc(20deg);
@@ -78,7 +80,6 @@
 @media only screen and (max-width: 600px) {
   .header{
     padding-top: 6rem;
-    height: auto;
   }
   .finance-img,.shop-img,.edu-img{
     height: 13rem;

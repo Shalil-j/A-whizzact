@@ -1,0 +1,13 @@
+.service-img-container{z-index: 1;width: 90vw ;height: 20rem;}
+.service-img{width: 100%;height: 100%;object-fit: contain;}
+.blob{z-index: -1;position: absolute;top: 0;left: 50%;transform: translate(-50%, 0);height: 20rem;width: 20rem;object-fit: contain;}
+.service-tools-icons{height: 1.5rem;margin-top: 1rem;}
+.service-tools-icons img{width: 100%;height: 100%;object-fit: contain;}
+
+
+.service-carousel ::ng-deep .owl-prev{position: absolute;top: 37%;background: transparent;left: 1rem;}
+.service-carousel ::ng-deep .owl-next{position: absolute;top: 37%;background: transparent;right: 1rem;}
+.service-carousel ::ng-deep .owl-nav i{color:  #3419AB;font-size: 2rem;opacity: .5;}
+.service-carousel ::ng-deep .owl-nav i:focus,.service-carousel ::ng-deep .owl-nav i:hover{opacity: 1;}
+.service-carousel ::ng-deep .owl-prev:focus,.service-carousel ::ng-deep .owl-prev:hover{background: transparent;}
+.service-carousel ::ng-deep .owl-next:focus,.service-carousel ::ng-deep .owl-next:hover{background: transparent;}

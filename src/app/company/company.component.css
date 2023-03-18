@@ -1,36 +1,43 @@
-.company{
+.company {
   padding-bottom: 5rem;
 }
-.header{
+.header {
   height: 100vh;
-  background:linear-gradient(#f9f9f99e,#f9f9f9ac), url(../../assets/icons/patterns/pattern3.png);
+  background: linear-gradient(#f9f9f99e, #f9f9f9ac),
+    url(../../assets/icons/patterns/pattern3.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
 /*  */
-.avatar{
+.profiles {
+  display: flex;
+  gap: 1rem;
+}
+.avatar {
   padding: 0;
   border-radius: 2rem;
-  width: 16.5rem;
+  width: 18rem !important;
 }
-.avatar-bg{
-background-color: rgb(237, 216, 255);
-  width: 100%;
+.avatar-bg {
+  background-color: rgb(237, 216, 255);
   border-radius: 1.8rem;
-  height: 15rem;
+  width: 18rem;
+  height: 18rem;
   position: relative;
+  overflow: hidden;
 }
-.avatar-bg img{
-height: 12rem;
+.avatar-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /*  */
-.title{
+.title {
   color: rgb(227, 227, 227);
 }
-.goal{
+.goal {
   border-bottom: dashed 2px rgb(222, 222, 222);
 }
+.profile{filter: grayscale(1)}
 

@@ -101,3 +101,15 @@ background-color: white !important;
     height: 2.5rem;
     fill: rgb(178, 178, 178);
   }
+  @media only screen and (min-width: 768px){
+    .dropdown-menu{
+      top: 5rem;
+      left: -15rem;
+      width: 90vw;}
+  }
+  @media only screen and (min-width: 1200px){
+    .dropdown-menu{
+      top: 5rem;
+      left: -35rem;
+      width: 80vw;}
+  }

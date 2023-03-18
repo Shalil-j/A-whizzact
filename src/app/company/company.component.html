@@ -60,90 +60,31 @@
 <div class="container">
   <h1 class="text-head">Our Team</h1>
   <div class="row justify-content-center justify-content-md-between">
+    <div class="d-flex gap-2">
+    <drag-scroll class="profiles">
 <!--  -->
-    <div class=" col-md-3 avatar bg-white">
+    <div class=" avatar bg-white ms-4" *ngFor="let items of team_Info">
       <div class="avatar-bg text-center d-flex justify-content-center align-items-end">
-        <img class="img-fluid" src="../../assets/icons/avatar profile/profile2.png" alt="">
+        <img class="profile" src="{{items.profile}}" alt="{{items.name}}">
       </div>
       <div class="p-3">
-      <h5 class="fw-bolder">Juned</h5>
-      <p><i>FullStack Developer</i></p>
-      <div class="social-medial d-flex justify-content-between mt-3">
         <div>
-        <a href="" class="fs-4 text-secondary"><i class="bi bi-facebook"></i></a>
-        <a href="" class="fs-4 text-secondary ms-2"><i class="bi bi-github"></i></a>
-      </div>
+          <h5 class="fw-semibold text-capitalize">{{items.name}}</h5>
+          <p class="text-wrap"><i>~ {{items.designation}}</i></p>
+        </div>
+      <div class="social-medial d-flex justify-content-end mt-3">
+
       <div>
-        <a href="">
-        <p class="d-flex align-items-center ms-5 fw-bold text-dark"><i class="bi bi-linkedin pe-2 fs-4 text-blue"></i> 500+</p>
+        <a href="{{items.linkedin_url}}">
+          <i class="bi bi-linkedin pe-2 fs-4 text-blue"></i>
       </a>
     </div>
       </div>
     </div>
     </div>
     <!--  -->
-    <div class="col-3 mt-2 mt-md-0 avatar bg-white">
-      <div class="avatar-bg text-center d-flex justify-content-center align-items-end">
-        <img class="img-fluid" src="../../assets/icons/avatar profile/profile1.png" alt="">
-      </div>
-      <div class="p-3">
-      <h5 class="fw-bolder">Shalil</h5>
-      <p><i>FrontEnd Developer</i></p>
-      <div class="social-medial d-flex justify-content-between mt-3">
-        <div>
-        <a href="" class="fs-4 text-secondary"><i class="bi bi-facebook"></i></a>
-        <a href="" class="fs-4 text-secondary ms-2"><i class="bi bi-github"></i></a>
-      </div>
-      <div>
-        <a href="">
-        <p class="d-flex align-items-center ms-5 fw-bold text-dark"><i class="bi bi-linkedin pe-2 fs-4 text-blue"></i> 500+</p>
-      </a>
-    </div>
-      </div>
-    </div>
-    </div>
-    <!--  -->
-    <div class="col-3 mt-2 mt-md-0 avatar bg-white">
-      <div class="avatar-bg text-center d-flex justify-content-center align-items-end">
-        <img class="img-fluid" src="../../assets/icons/avatar profile/profile3.png" alt="">
-      </div>
-      <div class="p-3">
-      <h5 class="fw-bolder">Raman</h5>
-      <p><i>Manager</i></p>
-      <div class="social-medial d-flex justify-content-between mt-3">
-        <div>
-        <a href="" class="fs-4 text-secondary"><i class="bi bi-facebook"></i></a>
-        <a href="" class="fs-4 text-secondary ms-2"><i class="bi bi-github"></i></a>
-      </div>
-      <div>
-        <a href="">
-        <p class="d-flex align-items-center ms-5 fw-bold text-dark"><i class="bi bi-linkedin pe-2 fs-4 text-blue"></i> 500+</p>
-      </a>
-    </div>
-      </div>
-    </div>
-    </div>
-    <!--  -->
-    <div class="col-3 mt-2 mt-md-0 avatar bg-white">
-      <div class="avatar-bg text-center d-flex justify-content-center align-items-end">
-        <img class="img-fluid" src="../../assets/icons/avatar profile/profile4.png" alt="">
-      </div>
-      <div class="p-3">
-      <h5 class="fw-bolder">Ranjit</h5>
-      <p><i>FrontEnd Developer</i></p>
-      <div class="social-medial d-flex justify-content-between mt-3">
-        <div>
-        <a href="" class="fs-4 text-secondary"><i class="bi bi-facebook"></i></a>
-        <a href="" class="fs-4 text-secondary ms-2"><i class="bi bi-github"></i></a>
-      </div>
-      <div>
-        <a href="">
-        <p class="d-flex align-items-center ms-5 fw-bold text-dark"><i class="bi bi-linkedin pe-2 fs-4 text-blue"></i> 500+</p>
-      </a>
-    </div>
-      </div>
-    </div>
-    </div>
+  </drag-scroll>
+</div>
   </div>
 </div>
 <!-- team -->
