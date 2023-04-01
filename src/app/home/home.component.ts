@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,} from '@angular/core';
 import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { NgOptimizedImage } from '@angular/common';
+
 
 declare let $:any;
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  // standalone: true,
+  // imports: [NgOptimizedImage],
   styleUrls: ['./home.component.css']
 })
 

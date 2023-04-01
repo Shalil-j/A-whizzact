@@ -11,6 +11,9 @@ export class SoftwareServiceComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  
   @ViewChild('myVideo') myVideo: any;
 
 

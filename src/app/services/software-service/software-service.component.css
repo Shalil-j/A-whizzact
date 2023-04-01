@@ -33,3 +33,15 @@
   height:25rem;
 }
 .software-dev h3,.software-dev p{white-space: pre-wrap;}
+
+.mobile-tech-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@media only screen and (max-width: 368px) {
+  .mobile-tech-logo{
+    display: none;
+  }
+}

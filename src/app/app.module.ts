@@ -22,7 +22,7 @@ import { UxuiServiceComponent } from './services/uxui-service/uxui-service.compo
 import { ClientlogoCarouselComponent } from './components/clientlogo-carousel/clientlogo-carousel.component';
 import { TestimonalComponent } from './components/testimonal/testimonal.component';
 // import { SlickCarouselModule } from 'ngx-slick-carousel';
-// import { TerminalModule } from 'primeng/terminal';
+// import { NgOptimizedImage } from '@angular/common';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ServicescarouselComponent } from './components/servicescarousel/servicescarousel.component';
 @NgModule({
@@ -53,7 +53,7 @@ import { ServicescarouselComponent } from './components/servicescarousel/service
     AppRoutingModule,
     CarouselModule,
     // SlickCarouselModule
-    // TerminalModule
+    // NgOptimizedImage,
     DragScrollModule,
     BrowserAnimationsModule
   ],

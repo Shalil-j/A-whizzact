@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-// import anime from 'animejs/lib/anime.es.js';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 // import * as anime from 'animejs';
 
 declare var animejs: any;
@@ -17,18 +17,27 @@ export class MarketingServiceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // const path = animejs.path('#lines path')
+  Clientlogo: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: true,
+    dots: false,
+    autoplay:true,
+    autoplaySpeed:1000,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items:5
+      }
+    },
+    nav: false,
+  }
 
+  @ViewChild('myVideo') myVideo: any;
 
-//   ngAfterViewInit(): void {
-//   anime({
-//     targets: '.line-drawing-demo .lines .el',
-//     translateX: path('x'),
-//     translateY: path('y'),
-//     rotate: path('angle'),
-//     easing: 'linear',
-//     duration: 2000,
-//     loop: true
-//   });
-// }
+  ngAfterViewInit() {
+    this.myVideo.nativeElement.play();
+  }
 }
