@@ -9,10 +9,7 @@ export class MobileappServiceComponent implements OnInit {
   constructor() { window.scrollTo(0, 0) }
 
   ngOnInit(): void {
-    this.ngAfterViewInit() 
   }
-  
-
   Clientlogo: OwlOptions = {
     loop: true,
     mouseDrag: true,
