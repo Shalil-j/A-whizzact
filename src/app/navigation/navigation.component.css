@@ -101,6 +101,38 @@ background-color: white !important;
     height: 2.5rem;
     fill: rgb(178, 178, 178);
   }
+
+  .sidemenu{
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    height: 100vh;
+    transition: all .3s ease-in;
+    z-index: 150;
+  }
+  .sidemenu.show{
+    right: 0;
+  }
+  .sidebar-main{
+    list-style: none;
+    padding: 0;
+    line-height: 2.5rem;
+  }
+.submenus{
+  display: none;
+}
+  .overlay{
+    position: fixed;
+    background-color: #ffffff7a;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    display: none;
+  }
   @media only screen and (min-width: 768px){
     .dropdown-menu{
       top: 5rem;

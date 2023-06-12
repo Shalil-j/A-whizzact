@@ -3,10 +3,10 @@
       <div class="container-fluid d-flex justify-content-between align-items-center">
           <div>
               <a href="index.html">
-                  <img src="../../assets/image/logo.png" alt="" style="width: 5rem;">
+                  <img src="../../assets/image/logo.png" alt="" style="height: 3rem;">
               </a>
           </div>
-          <div class="d-none d-lg-block">
+          <div class="d-none d-xl-block">
           <ul class="navbar nav border-0 shadow-0 ">
               <li class="nav-item">
                   <a
@@ -99,136 +99,131 @@
                   <a class="nav-link text-dark links " routerLink="/contact">Contact</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link  fw-bold portfolio rounded-pill" href="http://whizzact.com/whizzact.pdf" target="_blank">Our PortFolio</a>
+                  <a class="nav-link  fw-bold portfolio rounded-pill" routerLink="/portfolio">Our PortFolio</a>
               </li>
           </ul>
       </div>
       <!-- side bar -->
-      <a class="navbar-toggler d-lg-none  btn shadow-0 border-0 fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-        <i class="bi bi-list fs-4" style="color: #3419AB;"></i>
-      </a>
-      <div  class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div  class="offcanvas-header bg-white ">
-          <a href="/">
-          <img src="../../assets/image/logo.png" alt=""  class="w-25"></a>
-          <a type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+<button class="bg-transparent border-0 d-xl-none" (click)="showMenu()"><i class="bi bi-list fs-4" style="color: #3419AB;"></i></button>
+
+<div class="sidemenu p-3 bg-white overflow-hidden">
+  <div class="overflow-scroll scrollbar-hidden">
+<div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+  <a href="/">
+    <img src="../../assets/image/logo-icon.png" alt="" style="height: 2rem;"></a>
+    <a type="button" class="btn-close btn-close-dark" (click)="closeMenu()"></a>
+</div>
+  <div class="sidebar-main-div mt-3 ">
+    <ul class="sidebar-main">
+      <li class="nav-item  px-3 rounded">
+        <a class="nav-link active  sidebar-links fw-semibold" aria-current="page" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item   rounded mt-3">
+        <a id="service" (click)="toggleSubmenu($event)" class="ps-3 py-2 fw-semibold btn  dropdown-toggle w-100 text-start nav-link text-dark">
+          Services
+        </a>
+
+        <div id="service-submenu" class=" border rounded py-2 mt-3 submenus">
+          <div class="row justify-content-center">
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/mobile-application">
+                <span class="material-symbols-outlined">
+                  phone_iphone
+                  </span>
+              <p class="ms-2">Mobile Application</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/web-application" >
+                <span class="material-symbols-outlined">
+                  language
+                  </span>
+              <p class="ms-2">Web Application</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/software-development" >
+                <span class="material-symbols-outlined">
+                  terminal
+                  </span>
+              <p class="ms-2">Software Developmen</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/devops-service" >
+                <span class="material-symbols-outlined">
+                  data_object
+                  </span>
+              <p class="ms-2">Devops Service</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/cloud-service">
+                <span class="material-symbols-outlined">
+                  cloud
+                  </span>
+              <p class="ms-2">Cloud Computing</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink"  routerLink="/services/digitial-marketing" >
+                <span class="material-symbols-outlined">
+                  campaign
+                  </span>
+              <p class="ms-2">Internet Marketing</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10 border-bottom py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/graphic-designing">
+              <span class="material-symbols-outlined">
+                edit
+                </span>
+              <p class="ms-2">Graphic Designing</p>
+            </a>
+            </div>
+            <!-- ----- -->
+            <div class="col-10  py-2">
+              <a href="" class="d-flex nav-link side-navlink" routerLink="/services/uxui-designing">
+                <span class="material-symbols-outlined">
+                  format_paint
+                  </span>
+              <p class="ms-2">UX/UI Designing</p>
+            </a>
+            </div>
+            <!-- ----- -->
+
+
+          </div>
         </div>
-        <div class="offcanvas-body bg-white border-top" >
-          <ul class="navbar-nav justify-content-center flex-grow-1 mx-auto">
-            <li class="nav-item  px-3 rounded">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" href="index.html">Home</a>
-            </li>
+      </li>
 
-            <li class="dropdown  rounded">
-              <a
-                class="ps-3 mt-1 fw-bold btn  dropdown-toggle w-100 text-start nav-link text-dark"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              <!-- data-bs-toggle="dropdown" aria-expanded="false" -->
-                Services
-              </a>
+      <li class="nav-item  px-3 rounded mt-3">
+        <a class="nav-link active  sidebar-links fw-semibold" aria-current="page" routerLink="//why-whizzact">Why WhizzAct</a>
+      </li>
+      <li class="nav-item  px-3 rounded mt-3">
+        <a class="nav-link active  sidebar-links fw-semibold" aria-current="page" routerLink="//industry">Industry</a>
+      </li>
+      <li class="nav-item  px-3 rounded mt-3">
+        <a class="nav-link active  sidebar-links fw-semibold" aria-current="page" routerLink="//company">Company</a>
+      </li>
+      <li class="nav-item  px-3 rounded mt-3">
+        <a class="nav-link active  sidebar-links fw-semibold" aria-current="page" routerLink="//contact">Contact</a>
+      </li>
+      <a routerLink="/portfolio" class="btn btn-primary mt-5 fw-semibold w-100" >Out PortFolio</a>
 
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="row justify-content-center">
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/mobile-application">
-                      <span class="material-symbols-outlined">
-                        phone_iphone
-                        </span>
-                    <p class="ms-2">Mobile Application</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/web-application" >
-                      <span class="material-symbols-outlined">
-                        language
-                        </span>
-                    <p class="ms-2">Web Application</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/software-development" >
-                      <span class="material-symbols-outlined">
-                        terminal
-                        </span>
-                    <p class="ms-2">Software Developmen</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/devops-service" >
-                      <span class="material-symbols-outlined">
-                        data_object
-                        </span>
-                    <p class="ms-2">Devops Service</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/cloud-service">
-                      <span class="material-symbols-outlined">
-                        cloud
-                        </span>
-                    <p class="ms-2">Cloud Computing</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink"  routerLink="/services/digitial-marketing" >
-                      <span class="material-symbols-outlined">
-                        campaign
-                        </span>
-                    <p class="ms-2">Internet Marketing</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10 border-bottom py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/graphic-designing">
-                    <span class="material-symbols-outlined">
-                      edit
-                      </span>
-                    <p class="ms-2">Graphic Designing</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
-                  <div class="col-10  py-2">
-                    <a href="" class="d-flex nav-link side-navlink" routerLink="/services/uxui-designing">
-                      <span class="material-symbols-outlined">
-                        format_paint
-                        </span>
-                    <p class="ms-2">UX/UI Designing</p>
-                  </a>
-                  </div>
-                  <!-- ----- -->
+    </ul>
+  </div>
+</div>
 
+</div>
+<span (click)="closeMenu()" class="overlay"></span>
 
-                </div>
-              </div>
-            </li>
-
-            <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="//why-whizzact">Why WhizzAct</a>
-            </li>
-            <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="//industry">Industry</a>
-            </li>
-            <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="//company">Company</a>
-            </li>
-            <li class="nav-item  px-3 rounded mt-3">
-              <a class="nav-link active  sidebar-links fw-bold" aria-current="page" routerLink="//contact">Contact</a>
-            </li>
-            <a href="http://whizzact.com/whizzact.pdf" target="_blank" class="btn btn-primary mt-5 fw-bold" >Out PortFolio</a>
-
-          </ul>
-        </div>
-      </div>
-      <!-- side bar -->
-      </div>
+    </div>
   </nav>

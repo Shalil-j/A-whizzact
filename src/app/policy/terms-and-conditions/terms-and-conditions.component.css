@@ -1,0 +1,41 @@
+.content-div h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+.content-div p{
+margin-top: 8px;
+color: rgb(97, 97, 97);
+}
+.content-div ol{
+    margin-top: 8px;
+    color: rgb(97, 97, 97);
+}
+.content{
+    margin-top: 1.5rem;
+}
+.head{
+    margin-top: 1rem;
+}
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+  }
+  li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+  }
+  li li {
+    margin: 0;
+  }
+  li li:before {
+    content: counters(item, ".") " ";
+  }

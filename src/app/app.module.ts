@@ -25,6 +25,10 @@ import { TestimonalComponent } from './components/testimonal/testimonal.componen
 // import { NgOptimizedImage } from '@angular/common';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ServicescarouselComponent } from './components/servicescarousel/servicescarousel.component';
+import { PrivacyPolicyComponent } from './policy/privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './policy/terms-and-conditions/terms-and-conditions.component';
+import { CancelAndRefundComponent } from './policy/cancel-and-refund/cancel-and-refund.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +50,10 @@ import { ServicescarouselComponent } from './components/servicescarousel/service
     ClientlogoCarouselComponent,
     TestimonalComponent,
     ServicescarouselComponent,
+    PrivacyPolicyComponent,
+    TermsAndConditionsComponent,
+    CancelAndRefundComponent,
+    PortfolioComponent,
 
   ],
   imports: [

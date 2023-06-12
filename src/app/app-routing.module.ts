@@ -13,6 +13,10 @@ import { DevopsServiceComponent } from './services/devops-service/devops-service
 import { MarketingServiceComponent } from './services/marketing-service/marketing-service.component';
 import { GraphicdesignServiceComponent } from './services/graphicdesign-service/graphicdesign-service.component';
 import { UxuiServiceComponent } from './services/uxui-service/uxui-service.component';
+import { PrivacyPolicyComponent } from './policy/privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './policy/terms-and-conditions/terms-and-conditions.component';
+import { CancelAndRefundComponent } from './policy/cancel-and-refund/cancel-and-refund.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
   {
@@ -35,6 +39,23 @@ const routes: Routes = [
     path: "company",
     component: CompanyComponent,
   },
+  {
+    path: "portfolio",
+    component: PortfolioComponent,
+  },
+  {
+    path: "privacy-policy",
+    component: PrivacyPolicyComponent,
+  },
+  {
+    path: "terms-condition",
+    component: TermsAndConditionsComponent,
+  },
+  {
+    path: "refunds-cancellations",
+    component: CancelAndRefundComponent,
+  },
+
   {
     path: "services/mobile-application",
     component: MobileappServiceComponent,
@@ -67,6 +88,7 @@ const routes: Routes = [
     path: "services/uxui-designing",
     component: UxuiServiceComponent,
   },
+
 ];
 
 @NgModule({

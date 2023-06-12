@@ -24,14 +24,22 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // $(window).scroll(function(){
-  // 	var scroll = $(window).scrollTop();
-	//   if (scroll > 300) {
-	//     $(".black").css("background" , "blue");
-	//   }
 
-	//   else{
-	// 	  $(".black").css("background" , "#333");
-	//   }
-  // })
+  showMenu(){
+    $('.sidemenu').addClass('show')
+    $('.overlay').fadeIn()
+    document.body.style.overflow = 'hidden'
+  }
+
+  closeMenu(){
+    $('.sidemenu').removeClass('show')
+    $('.overlay').fadeOut()
+    document.body.style.overflow = 'auto'
+  $('.submenus').slideUp();
+  }
+  toggleSubmenu(e:any){
+  let id = e.target.id
+  $('#'+id+'-submenu').slideToggle();
+
+  }
 }

@@ -1,0 +1,15 @@
+.content-div h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.content-div p{
+margin-top: 8px;
+color: rgb(97, 97, 97);
+}
+.content-div ol{
+    margin-top: 8px;
+    color: rgb(97, 97, 97);
+}
+.content{
+    margin-top: 1.5rem;
+}
